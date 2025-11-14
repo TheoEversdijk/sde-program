@@ -7,16 +7,16 @@ Dit programma is ontwikkeld met drie verschillende design patterns, elk uit een 
 
 * **Composite Pattern (Structural)**<br>
 De Composite Pattern groepeert objecten in een boomstructuur, waarin individuele objecten op dezelfde manier behandeld kunnen worden.<br>
-In deze applicatie is dit toegepast door de FileSystemComponent abstract class, waar de File en Directory classes van erven. 
+In deze applicatie is dit toegepast door de FileSystemComponent abstract class, waar de File en Directory classes van erven.<br>
 
 
-* **Factory Method Pattern (Creational)**<br>
-De Factory Method Pattern laat het instantiëren van objecten gedaan worden door sub-classes.<br>
-In deze applicatie is dit toegepast door de FileOperationFactory, dat op basis van de user-input een Command object creëert.
+* **Singleton Pattern (Creational)**<br>
+De Singleton Pattern zorgt ervoor dat er maar één instantie van een class bestaat binnen de applicatie.<br>
+In deze applicatie is dit toegepast in de FileSystem class. Via FileSystem.getInstance() krijgt de Main class altijd dezelfde root directory van het bestandssysteem.<br>
 
 
 * **Command Pattern (Behavioral)**<br>
 Bij de Command Pattern worden requests als zelfstandige objecten behandeld.<br>
-In deze applicatie implementeren de classes OpenFileCommand, DeleteFileCommand en RenameFileCommand de FileOperation interface.
+In deze applicatie implementeren de classes OpenFileCommand, DeleteFileCommand en RenameFileCommand de FileOperation interface.<br>
 
 Deze applicatie is ontwikkeld voor de cursus Software Design (CU75020V3). Met toestemming van Andries Nieuwenhuize heb ik deze opdacht zelfstandig uitgevoerd. 

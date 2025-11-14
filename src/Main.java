@@ -3,7 +3,9 @@ import java.util.Scanner;
 public class Main {
 
     public static void main(String[] args) {
-        Directory root = new Directory("root");
+        FileSystem fileSystem = FileSystem.getInstance();
+        Directory root = fileSystem.getRoot();
+
         File file1 = new File("book1.xlsx", root);
         File file2 = new File("photo.png", root);
 
